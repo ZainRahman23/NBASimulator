@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="{{url_for("static", filename="css/style.css")}}">
+            
+            
+            <title>Document</title>
+        </head>
+        <body>
+            <div class="select">
+  <div class="header2">
+    <img
+      class="_9595-cee-758-de-4-fb-55-d-0-f-1-aef-09-c-10-ed-5-1"
+      src="{{url_for("static", filename="images/NBALogo.png")}}"
+    />
+
+    <div class="menu2">
+      <div class="my-team2">MyTeam</div>
+
+      <div class="login2-2">Team Select</div>
+    </div>
+  </div>
+
+  <div class="content2">
+    <div class="team-box">
+        <div class="login3">Select a Team</div> 
+        <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            <ul class="slides-container" id="slides-container">
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Celtics.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Celtics")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Hawks.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Hawks")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Nuggets.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Nuggets")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Pacers.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Pacers")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Pistons.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Pistons")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Raptors.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Raptors")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Sixers.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Sixers")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Timberwolves.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Timberwolves")}}">Select</a>
+              </li>
+              <li class="slide">
+                <img src="{{url_for("static", filename="images/Logos/Wizards.webp")}}">
+                <div class="stars">☆☆☆☆☆</div>
+                <a class="team_button" href="{{url_for("selectTeam",team="Wizards")}}">Select</a>
+              </li>
+            </ul>
+          </section>
+        
+        </div>
+</div>
+</div>
+    <script src="{{url_for("static", filename="js/selectTeam.js")}}"></script>
+        </body>
+        </html>

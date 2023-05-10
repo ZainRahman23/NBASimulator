@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="{{url_for("static", filename="css/style.css")}}">
+            
+            
+            <title>Document</title>
+        </head>
+        <body>
+    <div class="select">
+        <div class="header3">
+            <div class="header2">
+                <img
+                class="_9595-cee-758-de-4-fb-55-d-0-f-1-aef-09-c-10-ed-5-1"
+                src="{{url_for("static", filename="images/NBALogo.png")}}"
+                />
+            
+            <div class="menu2">
+                <div class="my-team2">MyTeam</div>
+        
+                <div class="login2-2">Result</div>
+            </div>
+            </div>
+            <div class="menu3">
+                <div class="my-team3">{{team_name}} {{wins}}-{{losses}} {{rank}}</div>
+        
+            </div>
+            </div>
+
+  <div class="content2">
+    <div class="team-box">
+        <div class="login3">Game Result:</div> 
+        <div class="slide">
+            <img src="{{url_for("static", filename="images/Logos/"+playing_team.team.team_name + ".webp")}}">
+            <div class="stars">You {{result}}</div>
+            <a class="team_button" href="{{url_for("home")}}">Find Next Game</a>
+        </div>
+        
+        </div>
+</div>
+</div>
+<a class="logout_button" href="{{url_for("logout")}}">Logout</a>
+<a class="rankings_button" href="{{url_for("leaderboard")}}">Rankings</a>
+        </body>
+        </html>

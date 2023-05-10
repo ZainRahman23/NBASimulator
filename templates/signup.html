@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="{{url_for("static", filename="css/style.css")}}">
+            
+            
+            <title>Document</title>
+        </head>
+        <body>
+            <div class="login">
+  <div class="header">
+    <img
+      class="_9595-cee-758-de-4-fb-55-d-0-f-1-aef-09-c-10-ed-5-1"
+      src="{{url_for("static", filename="images/NBALogo.png")}}"
+    />
+
+    <div class="menu">
+      <div class="my-team">MyTeam</div>
+
+      <div class="login2">Signup</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <form method = "POST" class="login-box">
+      <div class="login3">Signup</div>  
+        <div class="username">Username</div>
+        <input type="text" class="form" name="username">
+        <div class="password">Password</div>
+        <input type="password" class="form" name="password">
+        <input type="submit" class="button" value="Login">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p class="username">{{msg}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+    </form>
+</div>
+</div>
+
+        </body>
+        </html>
